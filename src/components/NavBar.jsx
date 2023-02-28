@@ -40,7 +40,7 @@ export default function NavBar() {
             onClick={() => onUpdateActiveLink("home")}
           >
             <span>
-              <i>Davide</i> <b>Lopresti</b>
+              <b>Davide</b> <i>Lopresti</i>
             </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -49,6 +49,7 @@ export default function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
+                style={{ color: "#f2af3b" }}
                 href="#skills"
                 className={
                   activeLink === "skills" ? "active navbar-link" : "navbar-link"
@@ -58,6 +59,7 @@ export default function NavBar() {
                 Skills
               </Nav.Link>
               <Nav.Link
+                style={{ color: "#f2af3b" }}
                 href="#projects"
                 className={
                   activeLink === "projects"
@@ -69,7 +71,7 @@ export default function NavBar() {
                 Projects
               </Nav.Link>
               <Nav.Link
-                style={{ color: "#e3d35a" }}
+                style={{ color: "#f2af3b" }}
                 href="#connect"
                 className={
                   activeLink === "connect"
