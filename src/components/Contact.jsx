@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import contactImg from "../assets/img/contact-img.png";
 
 export default function Contact() {
   const formInitialDetails = {
@@ -64,7 +63,7 @@ export default function Contact() {
           <Col size={12} md={6}>
             <div>
               <h2>Send me an mail</h2>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} data-netlify="true">
                 <Row>
                   <Col size={12} sm={12} className="px-1">
                     <input

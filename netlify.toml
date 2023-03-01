@@ -1,5 +1,15 @@
 [build]
-  functions = "functions"
+  command = "npm run build"
+  publish = "public"
+
+[dev]
+  command = "npm run dev"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[functions]
+  directory = "functions"
 
 [[redirects]]
   from = "/*"
@@ -7,10 +17,9 @@
   status = 200
 
 [[redirects]]
-  from = "/.netlify/functions/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+  from = "/404.html"
+  to = "/404/"
+  status = 404
 
-[dev]
-  functions = "functions"
-  publish = "public"
+[forms]
+  email = "davidelopresti0129@gmail.com"
