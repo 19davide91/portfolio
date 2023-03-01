@@ -70,6 +70,7 @@ export default function Contact() {
                 netlify
                 netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="form-name" value="contact" />
                 <Row>
                   <Col size={12} sm={12} className="px-1">
                     <input
