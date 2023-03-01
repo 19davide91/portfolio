@@ -2,6 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');;
 
 
 * {
@@ -25,6 +26,7 @@ body {
   /* font-family: "Oswald"; */
   /* font-family: "Playfair Display"; */
   /* font-family: "Lato"; */
+  font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -213,14 +215,15 @@ nav.navbar .navbar-toggler-icon:after{
   font-size: 70px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 20px;
   display: block;
 }
 
 .banner p {
   color: #fffefe;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
+  line-height: 1.4;
 }
 
 .banner a {
@@ -341,6 +344,7 @@ nav.navbar .navbar-toggler-icon:after{
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   width: 70%;
+  font-weight: 600
 }
 
 /* project card */
@@ -398,6 +402,7 @@ nav.navbar .navbar-toggler-icon:after{
   padding: .5rem 1rem;
   border: 1px solid #000000;
   border-radius: 5px;
+  font-weight: 600
 }
 
 .project-card .info {
@@ -418,6 +423,7 @@ nav.navbar .navbar-toggler-icon:after{
 .project-card a:hover {
   color: #f95e5e;
   background-color: #000000;
+  font-weight: 600
 }
 
 .card-body a {
