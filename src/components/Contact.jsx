@@ -63,7 +63,12 @@ export default function Contact() {
           <Col size={12} md={6}>
             <div>
               <h2>Send me an mail</h2>
-              <form name="contact" onSubmit={handleSubmit} data-netlify="true">
+              <form
+                name="contact"
+                method="POST"
+                onSubmit={handleSubmit}
+                data-netlify="true"
+              >
                 <Row>
                   <Col size={12} sm={12} className="px-1">
                     <input
