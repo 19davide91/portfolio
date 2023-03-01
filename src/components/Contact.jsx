@@ -67,7 +67,8 @@ export default function Contact() {
                 name="contact"
                 method="POST"
                 onSubmit={handleSubmit}
-                data-netlify="true"
+                netlify
+                netlify-honeypot="bot-field"
               >
                 <Row>
                   <Col size={12} sm={12} className="px-1">
