@@ -128,7 +128,8 @@
 //   );
 // }
 
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -168,40 +169,45 @@ export default function ContactForm() {
   return (
     <section className="contact" id="connect">
       <form
-        name="contact"
-        method="POST"
+        name="contact v1"
+        method="post"
         data-netlify="true"
         onSubmit={handleSubmit}
       >
-        <input type="hidden" name="form-name" value="contact" />
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <label htmlFor="message">Message</label>
-        <textarea
-          name="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        ></textarea>
-        <label style={{ display: "none" }}>
-          Don’t fill this out if you’re human:{" "}
+        <input type="hidden" name="form-name" value="contact v1" />
+        <div>
+          <label htmlFor="name">Name</label>
           <input
-            name="bot-field"
-            onChange={(e) => setHoneypot(e.target.value)}
+            type="text"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
-        </label>{" "}
-        {/* honeypot field */}
+        </div>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="message">Message</label>
+          <textarea
+            name="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+          <label style={{ display: "none" }}>
+            Don't fill this out if you're human:
+            <input
+              name="bot-field"
+              onChange={(e) => setHoneypot(e.target.value)}
+            />
+          </label>
+        </div>
         <button type="submit">Submit</button>
       </form>
     </section>
