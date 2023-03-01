@@ -1,11 +1,12 @@
 const nodemailer = require("nodemailer");
 
 exports.handler = async (event) => {
+  console.log("!!", process.env.EMAIL_PASSWORD);
   const contactEmail = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: "davidelopresti0129@gmail.com",
-      pass: "kuyvyvkfckftyfftydfgghyfh",
+      pass: process.env.EMAIL_PASSWORD,
     },
   });
 
