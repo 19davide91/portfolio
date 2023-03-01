@@ -15,7 +15,17 @@ function Door(props) {
     >
       <div className={`door ${isOpen ? "open" : ""}`}>
         <div className="door-handle" />
-        {!isOpen && <p className="door-text">Welcome!</p>}
+        {!isOpen && (
+          <p className="door-text">
+            Welcome!
+            <br />
+            <br />
+            Clik to enter
+            <br />
+            <br />
+            👆
+          </p>
+        )}
       </div>
     </div>
   );

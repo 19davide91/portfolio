@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowBarUp } from "react-bootstrap-icons";
+import { Arrow90degLeft } from "react-bootstrap-icons";
 import logo from "../assets/img/logo.png";
 
 export default function Banner() {
@@ -28,9 +28,13 @@ export default function Banner() {
                 <i style={{ color: "#f2af3b" }}>respect</i> and{" "}
                 <i style={{ color: "#f2af3b" }}>mutual support</i>.
               </p>
-              <a href="https://drive.google.com/file/d/1tZ0qr0KdqGngjecqmq7y_o1m0SRgFTLd/view?usp=share_link">
+              <a
+                href="https://drive.google.com/file/d/1K2-SzUic4vkDWv3YDmXEsMCF2-B8eEPz/view?usp=share_link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {" "}
-                My CV <ArrowBarUp size={30} />
+                CV <Arrow90degLeft size={30} />
               </a>
             </div>
           </Col>

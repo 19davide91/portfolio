@@ -22,7 +22,7 @@ export default function Projects() {
       img: GiveGift,
       demoUrl: "https://gift-app.cyclic.app/",
       about:
-        "Give Gift is an app app built together with my classmate in Hironhach that allows users to record theyr presents in a list and decide later when and who to gift it to as well as create list of friends and attribute the present to them.",
+        "Give Gift is an app app built together with my classmate in Hironhach that allows users to record theyr presents in a list and decide later when and who to gift it to as well as create list of friends and attribute the present to them. (Only desktop version implemented).",
     },
     {
       id: "Acheronte River",
@@ -31,7 +31,7 @@ export default function Projects() {
       img: AcheronteRiver,
       demoUrl: "https://19davide91.github.io/Game-Acheronte-River/",
       about:
-        "Acheronte River is a game where the player has to avoid the demons and collect the souls by moving a small boat inside the Acheron river with keyboard arrows. The game ends when the boat collides with a demon, for each soul collected the player gains 10 points.",
+        "Acheronte River is a game where the player has to avoid the demons and collect the souls by moving a small boat inside the Acheron river with keyboard arrows. The game ends when the boat collides with a demon, for each soul collected the player gains 10 points. (Only desktop version implemented).",
     },
   ];
 
