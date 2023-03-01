@@ -129,87 +129,90 @@
 // }
 
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [honeypot, setHoneypot] = useState(""); // honeypot field
+  //   const [name, setName] = useState("");
+  //   const [email, setEmail] = useState("");
+  //   const [message, setMessage] = useState("");
+  //   const [honeypot, setHoneypot] = useState(""); // honeypot field
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (honeypot) {
-      console.log("This is a spam submission");
-      return;
-    }
-    const data = { name, email, message };
-    fetch("/.netlify/functions/submitForm", {
-      method: "POST",
-      body: JSON.stringify(data),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        alert("Thank you for your submission!");
-      })
-      .catch((error) => {
-        console.error("Error submitting form:", error);
-        alert(
-          "There was an error submitting your form. Please try again later."
-        );
-      });
-  };
+  //   const handleSubmit = (e) => {
+  //     e.preventDefault();
+  //     if (honeypot) {
+  //       console.log("This is a spam submission");
+  //       return;
+  //     }
+  //     const data = { name, email, message };
+  //     fetch("/.netlify/functions/submitForm", {
+  //       method: "POST",
+  //       body: JSON.stringify(data),
+  //     })
+  //       .then((response) => {
+  //         if (!response.ok) {
+  //           throw new Error("Network response was not ok");
+  //         }
+  //         return response.json();
+  //       })
+  //       .then((data) => {
+  //         console.log(data);
+  //         alert("Thank you for your submission!");
+  //       })
+  //       .catch((error) => {
+  //         console.error("Error submitting form:", error);
+  //         alert(
+  //           "There was an error submitting your form. Please try again later."
+  //         );
+  //       });
+  //   };
 
   return (
-    <section className="contact" id="connect">
-      <form
-        name="contact v1"
-        method="post"
-        data-netlify="true"
-        onSubmit={handleSubmit}
-      >
-        <input type="hidden" name="form-name" value="contact v1" />
-        <div>
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="message">Message</label>
-          <textarea
-            name="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-          <label style={{ display: "none" }}>
+    <div>
+      <section className="contact" id="connect">
+        <form
+          name="contact v1"
+          method="post"
+          data-netlify="true"
+          // onSubmit={handleSubmit}
+          onSubmit="submit"
+        >
+          <input type="hidden" name="form-name" value="contact v1" />
+          <div>
+            <label htmlFor="full-name">Full Name</label>
+            <input
+              type="text"
+              name="full-name"
+              id="full-name"
+              // onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              // onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              // onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+            {/* <label style={{ display: "none" }}>
             Don't fill this out if you're human:
             <input
               name="bot-field"
               onChange={(e) => setHoneypot(e.target.value)}
             />
-          </label>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+          </label> */}
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
   );
 }
