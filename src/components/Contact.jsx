@@ -134,8 +134,16 @@ export default function ContactForm() {
   return (
     <div>
       <section className="contact" id="connect">
-        <form name="contact" method="post" data-netlify="true">
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
           <input type="hidden" name="form-name" value="contact" />
+          <div hidden>
+            <input name="bot-field" />
+          </div>
           <div>
             <label htmlFor="full-name">Full Name</label>
             <input type="text" name="full_name" id="full-name" />
