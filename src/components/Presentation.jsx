@@ -29,7 +29,7 @@ export default function Banner() {
                 <i style={{ color: "#f2af3b" }}>mutual support</i>.
               </p>
               <a
-                href="https://drive.google.com/file/d/1K2-SzUic4vkDWv3YDmXEsMCF2-B8eEPz/view?usp=share_link"
+                href="https://drive.google.com/file/d/1UbFjJM-WbfRu2mxJM-kaw85DjbApmd2T/view?usp=share_link"
                 target="_blank"
                 rel="noreferrer"
               >
