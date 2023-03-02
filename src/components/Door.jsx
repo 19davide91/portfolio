@@ -18,12 +18,21 @@ function Door(props) {
     setStartX(event.clientX || event.touches[0].clientX);
   };
 
+  // const handleMouseMove = (event) => {
+  //   if (!isDragging) return;
+  //   const currentX = event.clientX || event.touches[0].clientX;
+  //   const deltaX = currentX - startX;
+  //   setDragX(deltaX);
+  //   doorRef.current.style.transform = `rotateY(${deltaX * 5}deg)`;
+  // };
   const handleMouseMove = (event) => {
     if (!isDragging) return;
     const currentX = event.clientX || event.touches[0].clientX;
     const deltaX = currentX - startX;
     setDragX(deltaX);
-    doorRef.current.style.transform = `rotateY(${deltaX * 5}deg)`;
+
+    const totalDeltaX = deltaX + dragX;
+    doorRef.current.style.transform = `rotateY(${totalDeltaX * 5}deg)`;
   };
 
   const handleMouseUp = () => {
