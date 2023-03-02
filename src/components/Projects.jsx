@@ -22,7 +22,7 @@ export default function Projects() {
       img: GiveGift,
       demoUrl: "https://gift-app.cyclic.app/",
       about:
-        "Give Gift is an app app built together with my classmate in Hironhach that allows users to record theyr presents in a list and decide later when and who to gift it to as well as create list of friends and attribute the present to them. (Only desktop version implemented).",
+        "Give Gift is an app app built together with my classmate in Hironhach that allows users to record their presents in a list and decide later when and who to gift it to as well as create list of friends and attribute the present to them. (Only desktop version implemented).",
     },
     {
       id: "Acheronte River",
