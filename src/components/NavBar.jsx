@@ -50,16 +50,6 @@ export default function NavBar() {
             <Nav className="ms-auto">
               <Nav.Link
                 style={{ color: "#f2af3b" }}
-                href="#skills"
-                className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("skills")}
-              >
-                Skills
-              </Nav.Link>
-              <Nav.Link
-                style={{ color: "#f2af3b" }}
                 href="#projects"
                 className={
                   activeLink === "projects"
@@ -69,6 +59,16 @@ export default function NavBar() {
                 onClick={() => onUpdateActiveLink("projects")}
               >
                 Projects
+              </Nav.Link>
+              <Nav.Link
+                style={{ color: "#f2af3b" }}
+                href="#skills"
+                className={
+                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("skills")}
+              >
+                Skills
               </Nav.Link>
               <Nav.Link
                 style={{ color: "#f2af3b" }}
