@@ -18,19 +18,19 @@ export default function ContactForm() {
           </div>
           <div style={{ color: "#f2af3b" }} size={12} sm={12} className="px-1">
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
           </div>
           <div style={{ color: "#f2af3b" }} size={12} sm={12} className="px-1">
             <label htmlFor="surname">Surname</label>
-            <input type="text" name="surname" id="surname" />
+            <input type="text" name="surname" id="surname" required />
           </div>
           <div style={{ color: "#f2af3b" }} size={12} sm={12} className="px-1">
             <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" required />
           </div>
           <div style={{ color: "#f2af3b" }} size={12} sm={12} className="px-1">
             <label htmlFor="message">Message</label>
-            <textarea rows="9" name="message" id="message"></textarea>
+            <textarea rows="9" name="message" id="message" required></textarea>
           </div>
           <button type="submit">Submit</button>
         </form>
