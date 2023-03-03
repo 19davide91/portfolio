@@ -346,6 +346,7 @@ nav.navbar .navbar-toggler-icon:after{
   min-width: 300px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
