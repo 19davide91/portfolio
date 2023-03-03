@@ -191,9 +191,8 @@ nav.navbar .navbar-toggler-icon:after{
 
 /* presentation section */
 .banner {
-  margin-bottom: 50px;
-  padding: 200px 0 0 0;
-  /* background-image: url('./assets/img/banner-bg.png'); */
+  margin-bottom: 0px;
+  padding: 200px 0 200px 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -250,13 +249,6 @@ nav.navbar .navbar-toggler-icon:after{
   }
 }
 
-.banner img {
-  border-radius: 10%;
-  object-fit: cover;
-  transform: scale(0.1);
-  animation: scale-image 8s ease-in-out infinite;
-}
-
 @keyframes scale-image {
   0% {
     transform: scale(0.05) rotate(0deg);
@@ -271,7 +263,7 @@ nav.navbar .navbar-toggler-icon:after{
 
 /* skills section */
 .skill {
-  padding: 80px 0 80px 0;
+  padding: 10px 0 200px 0;
   position: relative;
 }
 
@@ -323,7 +315,7 @@ nav.navbar .navbar-toggler-icon:after{
   text-align: center;
   background-color: #000000;
   position: relative;
-  padding: 50px 0;
+  padding: 10px 0 200px 0;
 }
 
 .project p {
@@ -423,7 +415,7 @@ nav.navbar .navbar-toggler-icon:after{
 .contact {
   margin: 0 auto;
   background-color: #000000;
-  padding: 30px 0 30px 0;
+  padding: 10px 0 10px 0;
   max-width: 450px;
 }
 
@@ -466,22 +458,19 @@ nav.navbar .navbar-toggler-icon:after{
   font-weight: 700;
   color: #000;
   background-color: #f2af3b;
-  padding: 14px 48px;
+  padding: 15px 50px;
   margin-top: 25px;
+  margin-left: 5px;
   position: relative;
-  border: 10px solid #000000;
-  border-radius: 20px;
+  border: 0px solid #000000;
+  border-radius: 10px;
   transition: 0.3s ease-in-out;
-}
-
-.contact form button span {
-  z-index: 1;
-  position: relative;
 }
 
 .contact form button:hover {
   color: #f2af3b;
   background: #000000;
+  box-shadow: 0 0 50px 0 #f2af3b;
 }
 
 /* footer section */

@@ -2,13 +2,14 @@ import React from "react";
 
 export default function ContactForm() {
   return (
-    <div className="contact">
+    <div className="contact" id="connect">
       <h2>Get in touch 📧</h2>
-      <section className="contact" id="connect">
+      <section>
         <form
           name="contact"
           method="post"
           data-netlify="true"
+          onSubmit="submit"
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="contact" />
@@ -16,8 +17,12 @@ export default function ContactForm() {
             <input name="bot-field" />
           </div>
           <div style={{ color: "#f2af3b" }} size={12} sm={12} className="px-1">
-            <label htmlFor="full-name">Full Name</label>
-            <input type="text" name="full_name" id="full-name" />
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div style={{ color: "#f2af3b" }} size={12} sm={12} className="px-1">
+            <label htmlFor="surname">Surname</label>
+            <input type="text" name="surname" id="surname" />
           </div>
           <div style={{ color: "#f2af3b" }} size={12} sm={12} className="px-1">
             <label htmlFor="email">Email</label>
@@ -25,7 +30,7 @@ export default function ContactForm() {
           </div>
           <div style={{ color: "#f2af3b" }} size={12} sm={12} className="px-1">
             <label htmlFor="message">Message</label>
-            <textarea rows="6" name="message" id="message"></textarea>
+            <textarea rows="9" name="message" id="message"></textarea>
           </div>
           <button type="submit">Submit</button>
         </form>
