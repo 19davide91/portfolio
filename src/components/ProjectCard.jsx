@@ -2,8 +2,14 @@ import { Col } from "react-bootstrap";
 
 export default function ProjectCard({ title, tech, img, demoUrl, about }) {
   return (
-    <Col style={{ display: "flex", flexWrap: "wrap" }}>
-      <div className="project-card" style={{ display: "flex" }}>
+    <Col
+      className="project-card"
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+      }}
+    >
+      <div>
         <div className="img">
           <img src={img} alt="" />
         </div>

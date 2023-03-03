@@ -323,6 +323,7 @@ nav.navbar .navbar-toggler-icon:after{
   background-color: #000000;
   position: relative;
   padding: 10px 0 200px 0;
+
 }
 
 .project p {
@@ -340,11 +341,9 @@ nav.navbar .navbar-toggler-icon:after{
   background-color: #f95e5e;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 1rem;
-
+  margin: 0 auto;
   width: 100%;
   min-width: 300px;
-
   display: flex;
   flex-direction: column;
 }
@@ -368,7 +367,6 @@ nav.navbar .navbar-toggler-icon:after{
 .card-body {
   text-align: justify;
   margin: 0;
-
   display: flex;
   flex-direction: column;
 }
