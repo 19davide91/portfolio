@@ -342,6 +342,7 @@ nav.navbar .navbar-toggler-icon:after{
   border-radius: 10px;
   overflow: hidden;
   margin: 0 auto;
+  margin-bottom: 30px;
   width: 100%;
   min-width: 300px;
   display: flex;
